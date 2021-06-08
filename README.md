@@ -601,7 +601,7 @@ O que será testado:
 
 Utilize a estratégia de multi-ambientes no frontend. Para isso:
 
-   - Renomeie o remote atual para `development`;
+   - Renomeie o *remote* atual para `development`;
 
    - Refaça o deploy com um item no frontend que identifique o layout como rodando em modo de "desenvolvimento". Esse tag item **deve** conter o o texto "Em desenvolvimento"
 
