@@ -438,7 +438,7 @@ Para publicar seu frontend React, utilize o buildpack [mars/create-react-app](ht
 Lembre-se de que é possível testar o comportamento definindo as variáveis de ambiente em sua máquina. Você pode fazê-las apontar tanto para o backend rodando localmente em sua máquina, quanto para as APIs já publicadas nos requisitos anteriores.
 
 
-⚠️ **Dica: Lembre-se que ao importar a uma variável de ambiente com `process.env.nomeDaVariavel`, seu tipo é `string`.** ⚠️
+⚠️ **Dica: Lembre-se que ao importar uma variável de ambiente com `process.env.nomeDaVariavel`, seu tipo é `string`.** ⚠️
 
 ---
 
