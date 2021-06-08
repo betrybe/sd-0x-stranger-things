@@ -607,7 +607,7 @@ Utilize a estratégia de multi-ambientes no frontend. Para isso:
 
    - Crie um novo app no heroku cujo nome deve ser seu nome de usuário do github seguido de "-pd". Por exemplo, se o seu usuário do github for "student", o nome do seu app será "student-pd" e a url ***precisar ser*** https://student-pd.herokuapp.com/.
 
-   - Lembre-se de criar uma variável de ambiente para controlar esse comportamento, e configurá-la nos apps publicados.
+   - Lembre-se que a boa prática para essa situação é criar uma variável de ambiente para controlar esse comportamento, configurando-a para ter um valor diferente em cada um dos ambientes.
 
 O que será testado:
  - Se ao acessar o frontend de desenvolvimento, haverá a tag com o texto "em desenvolvimento"
