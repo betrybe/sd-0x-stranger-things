@@ -135,7 +135,7 @@ Adapte e configure os projetos descritos nesse *README* para que seja feito o de
   * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-stranger-things-backend/pulls) e confira que o seu _Pull Request_ está criado
   * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-stranger-things-frontend/pulls) e confira que o seu _Pull Request_ está criado
 
-** Observação: Os PRs não devem ser abertos neste repositório, apenas nos outros dois repositórios. **
+* ⚠ **Observação: Os PRs não devem ser abertos neste repositório, apenas nos outros dois repositórios.** ⚠
 
 
 ---
@@ -168,7 +168,7 @@ Para **"entregar"** seu projeto, siga os passos a seguir:
 
 Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
 
-⚠** Lembre-se que garantir que todas as _issues_ comentadas pelo Linter estão resolvidas!** ⚠
+⚠ **Lembre-se que garantir que todas as _issues_ comentadas pelo Linter estão resolvidas!** ⚠
 
 ---
 
@@ -437,6 +437,9 @@ Para publicar seu frontend React, utilize o buildpack [mars/create-react-app](ht
 
 Lembre-se de que é possível testar o comportamento definindo as variáveis de ambiente em sua máquina. Você pode fazê-las apontar tanto para o backend rodando localmente em sua máquina, quanto para as APIs já publicadas nos requisitos anteriores.
 
+
+⚠️ **Dica: Lembre-se que ao importar uma variável de ambiente com `process.env.nomeDaVariavel`, seu tipo é `string`.** ⚠️
+
 ---
 
 # Requisitos do projeto
@@ -550,8 +553,14 @@ Altere o frontend para utilizar variáveis de ambiente para controlar as **URLs*
 Perceba que o código está esperando por duas **APIs**. Uma para o modo `upside-down` e a outra para o modo normal.
 
 O nome das variáveis deve ser o seguinte:
-- REACT_APP_HAWKINS_URL e REACT_APP_HAWKINS_TIMEOUT para a URL e o TIMEOUT do seu backend hawkins.
-- REACT_APP_UPSIDEDOWN_URL e REACT_APP_UPSIDEDOWN_TIMEOUT para a URL e o TIMEOUT do seu backend UPSIDEDOWN.
+
+- Para seu back-end hawkins:
+  - REACT_APP_HAWKINS_URL para a URL;
+  - TIMEOUT para o timeout;
+
+- Para seu back-end UPSIDEDOWN:
+  - REACT_APP_UPSIDEDOWN_URL para a URL;
+  - REACT_APP_UPSIDEDOWN_TIMEOUT para o timeout;
 
 O que será testado:
 - Se existem as 4 variáveis de ambiente citadas acima.
@@ -592,15 +601,13 @@ O que será testado:
 
 Utilize a estratégia de multi-ambientes no frontend. Para isso:
 
-   - Renomeie o remote atual para `development`;
+   - Renomeie o *remote* atual para `development`;
 
-   - Faça o deploy do novo ambiente, conforme [requisito 9](#9---Deploy-Heroku).
+   - Refaça o deploy com um item no frontend que identifique o layout como rodando em modo de "desenvolvimento". Esse tag item **deve** conter o texto "Em desenvolvimento"
 
-   - O nome do seu novo app no heroku deve ser seu nome de usuário do github seguido de "-pd". Por exemplo, se o seu usuário do github for "student", o nome do seu app será "student-pd" e a url ***precisar ser*** https://student-pd.herokuapp.com/.
+   - Crie um novo app no heroku cujo nome deve ser seu nome de usuário do github seguido de "-pd". Por exemplo, se o seu usuário do github for "student", o nome do seu app será "student-pd" e a url ***precisar ser*** https://student-pd.herokuapp.com/.
 
-   - Adicione um item ao frontend que identifique o layout como rodando em modo de "desenvolvimento". Esse tag item **deve** conter o o texto "Em desenvolvimento"
-
-   - Lembre-se de criar uma variável de ambiente para controlar esse comportamento, e configurá-la nos apps publicados.
+   - Lembre-se que a boa prática para essa situação é criar uma variável de ambiente para controlar esse comportamento, configurando-a para ter um valor diferente em cada um dos ambientes.
 
 O que será testado:
  - Se ao acessar o frontend de desenvolvimento, haverá a tag com o texto "em desenvolvimento"
@@ -639,5 +646,9 @@ Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência 
 Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH)
 
 O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
+
+---
+
+Você sabia que o LinkedIn é a principal rede social profissional e compartilhar o seu aprendizado lá é muito importante para quem deseja construir uma carreira de sucesso? Compartilhe esse projeto no seu LinkedIn, marque o perfil da Trybe (@trybe) e mostre para a sua rede toda a sua evolução.
 
 ---
