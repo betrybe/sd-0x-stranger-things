@@ -556,7 +556,7 @@ O nome das variáveis deve ser o seguinte:
 
 - Para seu back-end hawkins:
   - REACT_APP_HAWKINS_URL para a URL;
-  - TIMEOUT para o timeout;
+  - REACT_APP_TIMEOUT para o timeout;
 
 - Para seu back-end UPSIDEDOWN:
   - REACT_APP_UPSIDEDOWN_URL para a URL;
