@@ -454,7 +454,7 @@ Os requisitos estão agrupados por `frontend` e `backend`. Realize as alteraçõ
 
 Altere o backend para utilizar variáveis de ambiente para contrololar os seguintes comportamentos:
 
-   1. A porta que a API escutará, essa variável deve ter, nescessariamente, o nome PORT.
+   1. A porta que a API escutará, essa variável deve ter, nescessariamente, o nome PORT e o seu valor deve ser 3000.
 
    2. O modo "upsideDown". Essa variável espera um valor boleano e deverá se chamar UPSIDEDOWN_MODE. Lembre-se que as variáveis de ambiente são `strings`.
 
