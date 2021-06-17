@@ -610,7 +610,7 @@ Utilize a estratégia de multi-ambientes no frontend. Para isso:
    - Lembre-se que a boa prática para essa situação é criar uma variável de ambiente para controlar esse comportamento, configurando-a para ter um valor diferente em cada um dos ambientes.
 
 O que será testado:
- - Se ao acessar o frontend de desenvolvimento, haverá a tag com o texto "em desenvolvimento"
+ - Se ao acessar o frontend de desenvolvimento, haverá a tag com o texto "Em desenvolvimento"
  - Se ao acessar o frontend de produção, não haverá a tag.
 
 ---
